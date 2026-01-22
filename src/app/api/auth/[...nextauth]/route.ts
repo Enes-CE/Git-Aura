@@ -3,11 +3,17 @@ import GithubProvider from "next-auth/providers/github";
 import { SupabaseAdapter } from "@auth/supabase-adapter";
 import { createClient } from "@supabase/supabase-js";
 
+// Build sırasında environment variables yoksa fallback değerler kullan
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://placeholder.supabase.co";
+const supabaseSecret = process.env.SUPABASE_SERVICE_ROLE_KEY || "placeholder-secret";
+const githubId = process.env.GITHUB_ID || "placeholder-id";
+const githubSecret = process.env.GITHUB_SECRET || "placeholder-secret";
+
 const handler = NextAuth({
     providers: [
         GithubProvider({
-            clientId: process.env.GITHUB_ID!,
-            clientSecret: process.env.GITHUB_SECRET!,
+            clientId: githubId,
+            clientSecret: githubSecret,
             profile(profile) {
                 return {
                     id: profile.id.toString(),
@@ -22,10 +28,12 @@ const handler = NextAuth({
             },
         }),
     ],
-    adapter: SupabaseAdapter({
-        url: process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        secret: process.env.SUPABASE_SERVICE_ROLE_KEY!,
-    }) as any,
+    adapter: supabaseUrl && supabaseSecret && supabaseUrl !== "https://placeholder.supabase.co"
+        ? SupabaseAdapter({
+            url: supabaseUrl,
+            secret: supabaseSecret,
+        }) as any
+        : undefined, // Build sırasında adapter yoksa undefined
     callbacks: {
         async signIn({ user, account, profile }) {
             // Eğer GitHub OAuth ile giriş yapıldıysa ve email varsa
