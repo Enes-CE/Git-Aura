@@ -87,7 +87,8 @@ export default function Home() {
         <main className="min-h-screen relative bg-[#030014] overflow-x-hidden">
             <BackgroundCanvas />
             <UserMenu />
-            <GitHubStars />
+            {/* GitHub Stars sadece landing page'de görünsün */}
+            {!data && <GitHubStars />}
 
             <AnimatePresence mode="wait">
                 {!data ? (

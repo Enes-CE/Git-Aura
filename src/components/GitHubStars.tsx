@@ -13,10 +13,6 @@ interface GitHubStarsProps {
 export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
     const [stars, setStars] = useState<number | null>(null);
     const [isLoading, setIsLoading] = useState(true);
-    const { data: session } = useSession();
-    
-    // UserMenu varsa onun soluna, yoksa sağ üste yerleştir
-    const hasUserMenu = !!session;
 
     useEffect(() => {
         const fetchStars = async () => {
@@ -57,9 +53,7 @@ export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className={`fixed top-6 z-[60] flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full backdrop-blur-xl transition-all group ${
-                hasUserMenu ? "right-[calc(1.5rem+200px)]" : "right-6"
-            }`}
+            className="fixed top-6 right-6 z-[60] flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full backdrop-blur-xl transition-all group"
         >
             <Github className="w-4 h-4 text-white/70 group-hover:text-cyan-400 transition-colors" />
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
