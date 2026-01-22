@@ -8,6 +8,7 @@ import { useSession } from "next-auth/react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { GitHubStars } from "@/components/GitHubStars";
 
 export default function LeaderboardPage() {
     const { data: session } = useSession();
@@ -17,6 +18,7 @@ export default function LeaderboardPage() {
         <main className="min-h-screen relative bg-[#030014] overflow-x-hidden">
             <BackgroundCanvas />
             <UserMenu />
+            <GitHubStars />
             
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 py-12">
                 {/* Back Button */}

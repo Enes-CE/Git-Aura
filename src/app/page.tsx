@@ -12,6 +12,7 @@ import { signIn, useSession } from "next-auth/react";
 import { upsertLeaderboardEntry } from "@/lib/leaderboard";
 import { toast } from "sonner";
 import { Footer } from "@/components/Footer";
+import { GitHubStars } from "@/components/GitHubStars";
 
 export default function Home() {
     const { data: session, status } = useSession();
@@ -86,6 +87,7 @@ export default function Home() {
         <main className="min-h-screen relative bg-[#030014] overflow-x-hidden">
             <BackgroundCanvas />
             <UserMenu />
+            <GitHubStars />
 
             <AnimatePresence mode="wait">
                 {!data ? (

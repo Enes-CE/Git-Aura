@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, ChevronRight, Plug, Sparkles } from "lucide-react";
-import Link from "next/link";
+import { Github, ChevronRight } from "lucide-react";
 
 interface HeroProps {
     onConnectGithub: () => void;
@@ -45,38 +44,6 @@ export const Hero = ({ onConnectGithub, isLoading = false }: HeroProps) => {
                             Connect GitHub
                         </span>
                         <ChevronRight className="w-5 h-5 text-cyan-300" />
-                    </button>
-                </div>
-
-                {/* Additional Action Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                    <Link
-                        href="/leaderboard"
-                        className="flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white/80 hover:text-white transition-all group"
-                        data-testid="view-all-features-button"
-                        aria-label="View all features"
-                    >
-                        <Sparkles className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-semibold">View all features</span>
-                    </Link>
-                    
-                    <button
-                        onClick={() => {
-                            // Scroll to features section or show modal
-                            const featuresSection = document.getElementById("features");
-                            if (featuresSection) {
-                                featuresSection.scrollIntoView({ behavior: "smooth" });
-                            } else {
-                                // If features section doesn't exist, navigate to leaderboard
-                                window.location.href = "/leaderboard";
-                            }
-                        }}
-                        className="flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white/80 hover:text-white transition-all group"
-                        data-testid="integrate-external-tools-button"
-                        aria-label="Integrate external tools"
-                    >
-                        <Plug className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
-                        <span className="text-sm font-semibold">Integrate external tools</span>
                     </button>
                 </div>
             </motion.div>

@@ -20,6 +20,7 @@ export const UserMenu = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 20 }}
                     className="flex items-center gap-3 p-2 pr-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full backdrop-blur-xl transition-all group"
+                    style={{ marginRight: session ? "0" : "0" }}
                 >
                     {session.user?.image ? (
                         <img
