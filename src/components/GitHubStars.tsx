@@ -21,9 +21,9 @@ export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
     useEffect(() => {
         const fetchStars = async () => {
             try {
-                // GitHub repo bilgisi env variable'dan veya props'tan alınabilir
-                const repoOwner = owner || process.env.NEXT_PUBLIC_GITHUB_OWNER || "Enes-CE";
-                const repoName = repo || process.env.NEXT_PUBLIC_GITHUB_REPO || "Git-Aura";
+                // GitHub repo bilgisi - kesin değerler kullan
+                const repoOwner = owner || "Enes-CE";
+                const repoName = repo || "Git-Aura";
                 
                 const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}`);
                 
@@ -46,7 +46,8 @@ export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
     }, [owner, repo]);
 
     const displayStars = stars !== null ? stars : 0;
-    const repoUrl = `https://github.com/${owner || process.env.NEXT_PUBLIC_GITHUB_OWNER || "Enes-CE"}/${repo || process.env.NEXT_PUBLIC_GITHUB_REPO || "Git-Aura"}`;
+    // Kesin repo URL'i - environment variable'lara bağımlı değil
+    const repoUrl = `https://github.com/${owner || "Enes-CE"}/${repo || "Git-Aura"}`;
 
     return (
         <motion.a
