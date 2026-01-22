@@ -14,8 +14,8 @@
 
 [🚀 Live Demo](#) • [📖 Documentation](#getting-started) • [🐛 Report Bug](https://github.com/enesusta/gitaura/issues) • [💡 Request Feature](https://github.com/enesusta/gitaura/issues)
 
-[![GitHub Stars](https://img.shields.io/github/stars/enesusta/gitaura?style=social)](https://github.com/enesusta/gitaura)
-[![GitHub Forks](https://img.shields.io/github/forks/enesusta/gitaura?style=social)](https://github.com/enesusta/gitaura)
+[![GitHub Stars](https://img.shields.io/github/stars/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
+[![GitHub Forks](https://img.shields.io/github/forks/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
 
 </div>
 
@@ -77,7 +77,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/enesusta/gitaura.git
+git clone https://github.com/Enes-CE/GitAura.git
 
 # Navigate to project directory
 cd gitaura
@@ -121,8 +121,8 @@ SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
 GITHUB_TOKEN=your_github_personal_access_token
 
 # Optional: GitHub Repo Info (for stars badge)
-NEXT_PUBLIC_GITHUB_OWNER=enesusta
-NEXT_PUBLIC_GITHUB_REPO=gitaura
+NEXT_PUBLIC_GITHUB_OWNER=Enes-CE
+NEXT_PUBLIC_GITHUB_REPO=GitAura
 ```
 
 ### Database Setup
@@ -353,8 +353,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **GitAura Team**
 
-- GitHub: [@enesusta](https://github.com/enesusta)
-- Project Link: [https://github.com/enesusta/gitaura](https://github.com/enesusta/gitaura)
+- GitHub: [@Enes-CE](https://github.com/Enes-CE)
+- Project Link: [https://github.com/Enes-CE/GitAura](https://github.com/Enes-CE/GitAura)
 
 ---
 
