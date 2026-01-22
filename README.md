@@ -293,25 +293,6 @@ Git-Aura/
 - `POST /api/collect-data` - Collect comprehensive user data
 - `GET /api/cron/update-leaderboard` - Update leaderboard (cron)
 
----
-
-## 🎨 Screenshots
-
-<div align="center">
-
-### Landing Page
-![Landing Page](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/landing-page.png)
-
-### Dashboard
-![Dashboard](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/dashboard.png)
-
-### Leaderboard
-![Leaderboard](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/leaderboard.png)
-
-</div>
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
