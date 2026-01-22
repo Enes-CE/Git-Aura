@@ -12,10 +12,10 @@
 
 **A cinematic, high-end web application that transforms your GitHub profile into a visual masterpiece.**
 
-[🚀 Live Demo](https://git-aura-jade.vercel.app) • [📖 Documentation](#getting-started) • [🐛 Report Bug](https://github.com/Enes-CE/GitAura/issues) • [💡 Request Feature](https://github.com/Enes-CE/GitAura/issues)
+[🚀 Live Demo](https://git-aura-jade.vercel.app) • [📖 Documentation](#getting-started) • [🐛 Report Bug](https://github.com/Enes-CE/Git-Aura/issues) • [💡 Request Feature](https://github.com/Enes-CE/Git-Aura/issues)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
-[![GitHub Forks](https://img.shields.io/github/forks/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
+[![GitHub Stars](https://img.shields.io/github/stars/Enes-CE/Git-Aura?style=social)](https://github.com/Enes-CE/Git-Aura)
+[![GitHub Forks](https://img.shields.io/github/forks/Enes-CE/Git-Aura?style=social)](https://github.com/Enes-CE/Git-Aura)
 
 </div>
 
@@ -77,7 +77,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/Enes-CE/GitAura.git
+git clone https://github.com/Enes-CE/Git-Aura.git
 
 # Navigate to project directory
 cd gitaura
@@ -122,7 +122,7 @@ GITHUB_TOKEN=your_github_personal_access_token
 
 # Optional: GitHub Repo Info (for stars badge)
 NEXT_PUBLIC_GITHUB_OWNER=Enes-CE
-NEXT_PUBLIC_GITHUB_REPO=GitAura
+NEXT_PUBLIC_GITHUB_REPO=Git-Aura
 ```
 
 ### Database Setup
@@ -354,7 +354,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **GitAura Team**
 
 - GitHub: [@Enes-CE](https://github.com/Enes-CE)
-- Project Link: [https://github.com/Enes-CE/GitAura](https://github.com/Enes-CE/GitAura)
+- Project Link: [https://github.com/Enes-CE/Git-Aura](https://github.com/Enes-CE/Git-Aura)
 
 ---
 
