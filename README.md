@@ -8,7 +8,6 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 **A cinematic, high-end web application that transforms your GitHub profile into a visual masterpiece.**
 
@@ -80,13 +79,13 @@
 git clone https://github.com/Enes-CE/Git-Aura.git
 
 # Navigate to project directory
-cd gitaura
+cd Git-Aura
 
 # Install dependencies
 npm install
 
 # Create environment file
-cp .env.example .env.local
+# Copy the example below and create .env.local file manually
 
 # Configure your environment variables (see below)
 # Then run the development server
@@ -237,7 +236,7 @@ curl http://localhost:3000/api/init-data
 ## 📁 Project Structure
 
 ```
-gitaura/
+Git-Aura/
 ├── src/
 │   ├── app/                    # Next.js App Router
 │   │   ├── api/               # API routes
@@ -333,10 +332,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## 🙏 Acknowledgments
@@ -351,8 +346,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**GitAura Team**
-
 - GitHub: [@Enes-CE](https://github.com/Enes-CE)
 - Project Link: [https://github.com/Enes-CE/Git-Aura](https://github.com/Enes-CE/Git-Aura)
 
@@ -361,8 +354,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 ### ⭐ Star this repo if you find it helpful! ⭐
-
-**Made with ❤️ by the GitAura Team**
 
 [⬆ Back to Top](#-gitaura---ultimate-github-profiler)
 
