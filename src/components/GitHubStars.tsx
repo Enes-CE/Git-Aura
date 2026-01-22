@@ -21,7 +21,13 @@ export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
                 const repoOwner = owner || "Enes-CE";
                 const repoName = repo || "Git-Aura";
                 
-                const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}`);
+                // Cache bypass için timestamp ekle
+                const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}?t=${Date.now()}`, {
+                    cache: 'no-store',
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                    }
+                });
                 
                 if (response.ok) {
                     const data = await response.json();
@@ -39,6 +45,11 @@ export const GitHubStars = ({ owner, repo }: GitHubStarsProps) => {
         };
 
         fetchStars();
+        
+        // Her 30 saniyede bir güncelle (stars sayısı değişebilir)
+        const interval = setInterval(fetchStars, 30000);
+        
+        return () => clearInterval(interval);
     }, [owner, repo]);
 
     const displayStars = stars !== null ? stars : 0;
