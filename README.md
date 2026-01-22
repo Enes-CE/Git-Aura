@@ -12,7 +12,7 @@
 
 **A cinematic, high-end web application that transforms your GitHub profile into a visual masterpiece.**
 
-[🚀 Live Demo](#) • [📖 Documentation](#getting-started) • [🐛 Report Bug](https://github.com/enesusta/gitaura/issues) • [💡 Request Feature](https://github.com/enesusta/gitaura/issues)
+[🚀 Live Demo](https://git-aura-jade.vercel.app) • [📖 Documentation](#getting-started) • [🐛 Report Bug](https://github.com/Enes-CE/GitAura/issues) • [💡 Request Feature](https://github.com/Enes-CE/GitAura/issues)
 
 [![GitHub Stars](https://img.shields.io/github/stars/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
 [![GitHub Forks](https://img.shields.io/github/forks/Enes-CE/GitAura?style=social)](https://github.com/Enes-CE/GitAura)
