@@ -11,6 +11,7 @@ import { UserMenu } from "@/components/ui/UserMenu";
 import { signIn, useSession } from "next-auth/react";
 import { upsertLeaderboardEntry } from "@/lib/leaderboard";
 import { toast } from "sonner";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
     const { data: session, status } = useSession();
@@ -124,6 +125,9 @@ export default function Home() {
             <AnimatePresence>
                 {isLoading && <LoadingPortal />}
             </AnimatePresence>
+            
+            {/* Footer sadece Dashboard gösterildiğinde (data varsa) */}
+            {data && <Footer />}
         </main>
     );
 }

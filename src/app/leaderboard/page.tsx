@@ -7,6 +7,7 @@ import { Leaderboard } from "@/components/leaderboard/Leaderboard";
 import { useSession } from "next-auth/react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { Footer } from "@/components/Footer";
 
 export default function LeaderboardPage() {
     const { data: session } = useSession();
@@ -36,6 +37,8 @@ export default function LeaderboardPage() {
                 {/* Leaderboard */}
                 <Leaderboard currentUserLogin={currentUserLogin} />
             </div>
+            
+            <Footer />
         </main>
     );
 }
