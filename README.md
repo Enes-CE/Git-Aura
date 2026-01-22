@@ -300,13 +300,13 @@ Git-Aura/
 <div align="center">
 
 ### Landing Page
-![Landing Page](https://via.placeholder.com/800x400/030014/06b6d4?text=GitAura+Landing+Page)
+![Landing Page](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/landing-page.png)
 
 ### Dashboard
-![Dashboard](https://via.placeholder.com/800x400/030014/8b5cf6?text=GitAura+Dashboard)
+![Dashboard](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/dashboard.png)
 
 ### Leaderboard
-![Leaderboard](https://via.placeholder.com/800x400/030014/ec4899?text=Global+Leaderboard)
+![Leaderboard](https://raw.githubusercontent.com/Enes-CE/Git-Aura/main/public/screenshots/leaderboard.png)
 
 </div>
 
