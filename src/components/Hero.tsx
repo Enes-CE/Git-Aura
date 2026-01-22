@@ -36,6 +36,8 @@ export const Hero = ({ onConnectGithub, isLoading = false }: HeroProps) => {
                         onClick={onConnectGithub}
                         disabled={isLoading}
                         className="relative flex items-center justify-center gap-3 bg-black rounded-full px-6 py-4 w-full text-white font-medium text-lg hover:scale-[1.02] transition-transform disabled:opacity-50 disabled:hover:scale-100"
+                        data-testid="connect-github-button"
+                        aria-label="Connect with GitHub"
                     >
                         <Github className="w-6 h-6 text-cyan-400" />
                         <span className="uppercase tracking-[0.25em] text-xs md:text-sm text-white/80">

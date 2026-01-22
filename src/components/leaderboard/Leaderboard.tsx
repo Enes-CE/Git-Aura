@@ -160,6 +160,7 @@ export const Leaderboard = ({ currentUserLogin }: LeaderboardProps) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="text-3xl font-bold font-space text-white flex items-center gap-3"
+                    data-testid="leaderboard-title"
                 >
                     <Trophy className="w-8 h-8 text-yellow-400" />
                     Global Leaderboard
@@ -168,12 +169,14 @@ export const Leaderboard = ({ currentUserLogin }: LeaderboardProps) => {
                     <button
                         onClick={() => setIsFiltersOpen(!isFiltersOpen)}
                         className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white/70 hover:text-white transition-all"
+                        data-testid="filter-button"
+                        aria-label="Toggle filters"
                     >
                         <Filter className="w-4 h-4" />
                         <span className="text-sm font-semibold">Filters</span>
                         {isFiltersOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                     </button>
-                    <div className="text-xs text-gray-500 font-bold uppercase tracking-widest">
+                    <div className="text-xs text-gray-500 font-bold uppercase tracking-widest" data-testid="top-developers-count">
                         {isLoading ? "Loading..." : `Top ${leaderboard.length} Developers`}
                     </div>
                 </div>

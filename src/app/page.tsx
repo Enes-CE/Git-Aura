@@ -93,6 +93,7 @@ export default function Home() {
                         key="landing"
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.5 }}
+                        data-testid="landing-page"
                     >
                         <Hero
                             onConnectGithub={() => signIn("github")}

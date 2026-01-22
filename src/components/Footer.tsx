@@ -9,7 +9,11 @@ export const Footer = () => {
     const version = "1.0.0";
 
     return (
-        <footer className="relative z-10 border-t border-white/10 bg-black/20 backdrop-blur-xl">
+        <footer 
+            className="relative z-10 border-t border-white/10 bg-black/20 backdrop-blur-xl"
+            data-testid="footer"
+            role="contentinfo"
+        >
             <div className="w-full max-w-7xl mx-auto px-4 md:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand Section */}
