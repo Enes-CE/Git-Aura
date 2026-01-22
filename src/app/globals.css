@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #030014;
+  --foreground: #ffffff;
+  --primary-glow: conic-gradient(from 180deg at 50% 50%, #16abff33 0deg, #0885ff33 55deg, #54d6ff33 120deg, #0071ff33 160deg, transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-high-contrast {
+  background: rgba(22, 27, 34, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+/* Neon Glow Animation */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 35px rgba(6, 182, 212, 0.5);
+  }
+}
+
+.animate-glow {
+  animation: pulse-glow 3s infinite;
+}
+
+/* Grid Background */
+.bg-grid-pattern {
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Dropdown/Select Styling for Dark Theme */
+select {
+  color: white !important;
+  background-color: #0a0a0f !important;
+}
+
+select option {
+  background-color: #0a0a0f !important;
+  color: white !important;
+  padding: 8px 12px;
+}
+
+select option:hover {
+  background-color: #1a1a2e !important;
+}
+
+select option:checked {
+  background-color: #06b6d4 !important;
+  color: white !important;
+}
+
+/* Firefox dropdown styling */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+
+/* Ensure dropdown appears above other elements */
+select:focus {
+  z-index: 9999;
+  position: relative;
+}
