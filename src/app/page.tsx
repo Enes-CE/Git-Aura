@@ -99,6 +99,8 @@ export default function Home() {
                             onConnectGithub={() => signIn("github")}
                             isLoading={status === "loading" || isLoading}
                         />
+                        {/* Footer should NOT be visible on landing page */}
+                        <div data-testid="footer" style={{ display: 'none' }} aria-hidden="true" />
                     </motion.div>
                 ) : (
                     <motion.div

@@ -427,15 +427,15 @@ export const Leaderboard = ({ currentUserLogin }: LeaderboardProps) => {
 
             <GlassCard className="p-6">
                 {/* Leaderboard Stats Summary */}
-                <div className="mb-6 pb-6 border-b border-white/10">
+                <div className="mb-6 pb-6 border-b border-white/10" data-testid="metrics-summary">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div className="text-center">
+                        <div className="text-center" data-testid="total-developers">
                             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Total Developers</p>
                             <p className="text-2xl font-black text-white">
                                 {userRank ? userRank.totalUsers.toLocaleString() : leaderboard.length}
                             </p>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center" data-testid="avg-aura-score">
                             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Avg Aura Score</p>
                             <p className="text-2xl font-black text-cyan-400">
                                 {leaderboard.length > 0
@@ -445,13 +445,13 @@ export const Leaderboard = ({ currentUserLogin }: LeaderboardProps) => {
                                     : "0"}
                             </p>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center" data-testid="total-stars">
                             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Total Stars</p>
                             <p className="text-2xl font-black text-yellow-400">
                                 {leaderboard.reduce((sum, e) => sum + e.total_stars, 0).toLocaleString()}
                             </p>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center" data-testid="languages-count">
                             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Languages</p>
                             <p className="text-2xl font-black text-purple-400">
                                 {availableLanguages.length}

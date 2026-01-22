@@ -38,6 +38,7 @@ export default function LeaderboardPage() {
                 <Leaderboard currentUserLogin={currentUserLogin} />
             </div>
             
+            {/* Footer should be visible on leaderboard page */}
             <Footer />
         </main>
     );
